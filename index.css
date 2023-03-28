@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+    
+}
+.wrapper{
+    width: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.editor,.preview-container{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2em 1em;
+    box-shadow: 0 1.25em 4em rgba(8, 6, 75, 0.15);
+    border-radius: 0.5em;
+}
+.editor{
+margin-right: 4px;
+}
+.preview-container{
+    display: grid;
+    place-items: center;
+}
+
+
+.img-container img ,.preview-container img{
+width: 40%;
+  
+}
+#file{
+   display: none;
+}
+label[for='file']{
+    display: block;
+    background-color: #025bee;
+    width: 60%;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto 0 ;
+    cursor: pointer;
+}
+.option-btns{
+    margin-top: 7px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    text-align: center;
+}
+.option-btns button {
+ background-color: #dceafe;
+ /* place-items: center; */
+ /* text-decoration: none; */
+ color: #025bee;
+ width: 50px;
+ height: 50px;
+ padding: 5px;
+ text-align: center;
+ cursor: pointer;
+ border: none;
+ border-radius: 3px;
+}
+.option-btns button img{
+    /* position: absolute; */
+    /* text-align: center; */
+}
+.action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.action-btns button ,a{
+    background-color: #025bee;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    border-radius: 7px;
+}
+
+.hide{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .wrapper {
+      flex-direction: column;
+      position: absolute;
+      transform: translate(-50%);
+      left: 50%;
+      top: 10px;
+    }
+   .editor{
+    margin-bottom: 10px;
+   } 
+}
